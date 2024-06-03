@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Instic - A maneira mais facil de ler e ouvir um livro</title>
+
+    <!--estilo da pagina-->
+    <link rel="stylesheet" href="../css/Vermais.css">
+    <link rel="stylesheet" href="../css/informaçao.css">
+    <link rel="shortcut icon" href="../icons/Logo_Gold.png" type="image/png">
+
+    <!--fim do estilo da pagina-->
+</head>
+
+<body>
+
+
+    <!--cabeçalho-->
+
+    <header>
+        <div class="cabecalho-fixo">
+            <h1>InLib.</h1>
+            <p><a href="./index.lnk">Voltar</a></p>
+        </div>
+    </header>
+
+    <main>
+
+        <h1 style="margin-bottom: 10px;">Nome da Categoria</h1>
+
+        <div class="search">
+            <img onclick="search()" src="../icons/search-alt-2-regular-24.png" alt="">
+            <input type="search" placeholder="pesquisar um livro...">
+        </div>
+
+        <div onmouseover="" class="prateleiras">
+
+            <div class="prateleira">
+                <div class="livro">
+                    <img onclick="informacao()" onclick="informacao()" src="../img/Capas De Livros/10.jpg"
+                        alt="capa de livro">
+                    <img onclick="informacao()" src="../img/Capas De Livros/11.jpg" alt="capa de livro">
+                    <img onclick="informacao()" src="../img/Capas De Livros/12.jpg" alt="capa de livro">
+                    <img onclick="informacao()" src="../img/Capas De Livros/1.jpg" alt="capa de livro">
+                    <img onclick="informacao()" src="../img/Capas De Livros/2.jpg" alt="capa de livro">
+                    <img onclick="informacao()" src="../img/Capas De Livros/3.jpg" alt="capa de livro">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="prateleiras">
+
+            <div class="prateleira">
+                <div class="livro">
+                    <img onclick="informacao()" src="../img/Capas De Livros/4.jpg" alt="capa de livro">
+                    <img onclick="informacao()" src="../img/Capas De Livros/5.jpg" alt="capa de livro">
+                    <img onclick="informacao()" src="../img/Capas De Livros/6.jpg" alt="capa de livro">
+                    <img onclick="informacao()" src="../img/Capas De Livros/7.jpg" alt="capa de livro">
+                    <img onclick="informacao()" src="../img/Capas De Livros/8.jpg" alt="capa de livro">
+                    <img onclick="informacao()" src="../img/Capas De Livros/9.jpg" alt="capa de livro">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="prateleiras">
+
+            <div class="prateleira">
+                <div class="livro">
+                    <img onclick="informacao()" src="../img/Capas De Livros/10.jpg" alt="capa de livro">
+                    <img onclick="informacao()" src="../img/Capas De Livros/11.jpg" alt="capa de livro">
+                    <img onclick="informacao()" src="../img/Capas De Livros/12.jpg" alt="capa de livro">
+                    <img onclick="informacao()" src="../img/Capas De Livros/13.jpg" alt="capa de livro">
+                    <img onclick="informacao()" src="../img/Capas De Livros/14.jpg" alt="capa de livro">
+                    <img onclick="informacao()" src="../img/Capas De Livros/15.jpg" alt="capa de livro">
+                </div>
+            </div>
+
+            <div class="prateleira">
+                <div class="livro">
+                    <img onclick="informacao()" src="../img/Capas De Livros/10.jpg" alt="capa de livro">
+                    <img onclick="informacao()" src="../img/Capas De Livros/11.jpg" alt="capa de livro">
+                    <img onclick="informacao()" src="../img/Capas De Livros/12.jpg" alt="capa de livro">
+                    <img onclick="informacao()" src="../img/Capas De Livros/13.jpg" alt="capa de livro">
+                    <img onclick="informacao()" src="../img/Capas De Livros/14.jpg" alt="capa de livro">
+                    <img onclick="informacao()" src="../img/Capas De Livros/15.jpg" alt="capa de livro">
+                </div>
+            </div>
+
+            <div class="prateleira">
+                <div class="livro">
+                    <img onclick="informacao()" src="../img/Capas De Livros/10.jpg" alt="capa de livro">
+                    <img onclick="informacao()" src="../img/Capas De Livros/11.jpg" alt="capa de livro">
+                    <img onclick="informacao()" src="../img/Capas De Livros/12.jpg" alt="capa de livro">
+                    <img onclick="informacao()" src="../img/Capas De Livros/13.jpg" alt="capa de livro">
+                    <img onclick="informacao()" src="../img/Capas De Livros/14.jpg" alt="capa de livro">
+                    <img onclick="informacao()" src="../img/Capas De Livros/15.jpg" alt="capa de livro">
+                </div>
+            </div>
+        </div>
+
+        <div class="nav">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>&#8594;</div>
+        </div>
+
+    </main>
+
+    <!--fim do cabeçalho-->
+
+    <!--categorias 
+        
+    <div class="nav-categorias">
+        <nav>
+            <p>Livros</p>
+            <ul onclick="fecharCategoria()">
+                <li>Historia</li>
+                <li>Ciências</li>
+                <li>Ficção</li>
+                <li>Programação</li>
+            </ul>
+            <p>Audio Livros</p>
+            <ul onclick="fecharCategoria()">
+                <li>Historia</li>
+                <li>Ciências</li>
+                <li>Ficção</li>
+                <li>Programação</li>
+            </ul>
+            <p>Teses</p>
+            <ul onclick="fecharCategoria()">
+                <li>Monogafias</li>
+            </ul>
+        </nav>
+    </div>-->
+
+
+    <!--fim categorias-->
+
+
+    <!--ouvir musica-->
+    <audio id="musica" src="../musicas/1.mp3"></audio>
+
+    <div onclick="tocar()" class="ouvirmusica">
+        <img src="../icons/music-solid-24.png" alt="">
+    </div>
+
+    <div onclick="parar()" class="pausarmusica">
+        <img src="../icons/music-solid-24.png" alt="">
+    </div>
+    <!-- fim de ouvir musica-->
+
+    <!--informacao do livro-->
+
+    <div class="informacao">
+
+        <div onclick="fecharInformacao()" class="icon-fechar">x </div>
+
+        <img src="../img/Capas De Livros/8.jpg" alt="capa">
+        <br><br>
+        <span>Titulo</span>
+        <span>[autor]</span>
+        <span>Sobre:</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, architecto cupiditate earum enim
+            veniam
+            tempora soluta ratione consectetur at facere delectus repudiandae harum eaque sunt, blanditiis, non
+            recusandae nobis. Dolore.</p>
+
+        <div class="more">
+            <p class="borda">Paginas:<span>500</span></p>
+            <p>Categoria:<span>Saude</span></p>
+        </div>
+
+        <button class="leragora">Ler Agora -</button>
+
+    </div>
+
+
+
+
+    <div onclick="fecharInformacao()" onclick="fecharCategoria()" class="overflow"></div>
+    <!--fim da informaçao do livro-->
+
+
+    <!--overflow-->
+    <div onclick="fecharCategoria()" class="overflow"></div>
+    <!--fim do overflow-->
+
+    <script src="../script/script.js"></script>
+    <script src="../script/abrirInformacao.js"></script>
+
+</body>
+
+</html>

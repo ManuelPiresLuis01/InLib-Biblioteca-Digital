@@ -1,0 +1,90 @@
+.informacao {
+    position: fixed;
+    top: 54%;
+    left: 50%;
+    transform: translate(-52%, -50%);
+    background-color: wheat;
+    padding: 20px;
+    z-index: 9999;
+    text-align: center;
+    display: block;
+    display: none;
+}
+
+
+.overflow{
+    position: fixed;
+    width: 100%;
+    top: 70px;
+    left: 0;
+    height: 100vh;
+    background-color: #00000079;
+    z-index: 888;
+    display: none;
+    z-index: 1;
+}
+
+
+.overflow.abrir{
+    display: block;
+}
+
+.informacao.abrir{
+    display: block;
+}
+
+.informacao img {
+    width: 150px;
+}
+
+.informacao p {
+    margin: 5px;
+}
+
+span {
+    display: block;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.icon-fechar {
+    cursor: pointer;
+    margin-bottom: 5px;
+    justify-content: right;
+    display: flex;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #757575bd;
+
+}
+
+.more{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.more p {
+    font-weight: bold;
+}
+
+.more span {
+    font-weight: 200;
+}
+
+.leragora {
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: sienna;
+    cursor: pointer;
+    color: white;
+    transition: 1s;
+}
+
+.leragora:hover {
+    background-color: #a0512d91;
+    padding: 10px 85px;
+}
+
+

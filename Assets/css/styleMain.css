@@ -1,0 +1,797 @@
+/*resetar o html*/
+
+::-webkit-scrollbar {
+    width: 0;
+    overflow: hidden;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.nav-categorias1 {
+    display: none;
+}
+
+/*fim do reset*/
+
+/*estilos gerais*/
+body {
+    background-color: black;
+}
+
+
+.icon-categorias {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.icon-categorias img {
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+/*fim dos estilos gerais*/
+
+
+/*estilo do cabeçalho*/
+.cabecalho-fixo {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 80px;
+    background-color: black;
+    padding: 20px;
+    padding-left: 30px;
+    z-index: 9999;
+}
+
+.cabecalho-fixo h1 {
+    cursor: pointer;
+    color: #f7b40d;
+    font-weight: bold;
+}
+
+.background-barriga-do-instic {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 55px;
+    left: 0;
+    background: url(../img/barrigaIsutic1.jpg);
+    background-position: center center;
+    background-size: cover;
+    z-index: -1;
+    background-blend-mode: color;
+    background-color: rgba(0, 0, 0, 0.658);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.logo {
+    width: 300px;
+}
+
+/*animação do logotipo*/
+
+.logo {
+    margin: 100px 10px 0 10px;
+    margin-bottom: 0;
+    position: relative;
+    animation: imagemFlutuante 3s ease-in-out infinite alternate;
+    transition: .3s;
+}
+
+html {
+    margin: 0;
+}
+
+@keyframes imagemFlutuante {
+    0% {
+        top: -10px;
+    }
+
+    100% {
+        top: 20px;
+    }
+}
+
+/*animação do logotipo*/
+
+/*fim do estilo do cabeçalho*/
+
+
+/*estilo do main*/
+
+main {
+    width: 100%;
+    margin: 0;
+    margin-top: 115px;
+    background-color: wheat;
+}
+
+
+/*estilo dos destaques*/
+
+.destaques {
+    width: 100%;
+    padding: 10px;
+    background-color: #ada18b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.destaques img {
+    width: 90%;
+    border-radius: 30px;
+    transition: .2s;
+    padding: 10px;
+}
+
+.destaques img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.livro {
+    text-align: center;
+    color: #fcdd8e;
+}
+
+/*fim do estilo dos destaques*/
+
+
+/*estilo das prateleiras*/
+
+.search {
+    border: 1px solid #f7b40d;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 30px;
+    width: 300px;
+    cursor: pointer;
+    transition: 1s;
+    z-index: 999;
+    background-color: transparent;
+}
+
+.search.abrir {
+    width: 300px;
+}
+
+
+.search img {
+    padding: 8px;
+    padding-left: 0;
+    cursor: pointer;
+
+}
+
+input {
+    background-color: transparent;
+    width: 100%;
+    color: white;
+}
+
+
+.container-categorias {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-categorias span,
+.nav-categorias1 span {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    cursor: pinter;
+}
+
+.nav-categorias {
+    width: 30%;
+    padding: 5px 5px;
+    background-color: rgba(240, 248, 255, 0.692);
+    display: flex;
+    align-items: left;
+}
+
+nav {
+    width: 100%;
+}
+
+.nav-categorias p,
+.nav-categorias1 p {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 20px 0;
+    font-weight: bold;
+    border-bottom: 1px solid #dfae3157;
+}
+
+.nav-categorias1 p {
+    padding: 5px;
+    margin: 20px 0;
+    font-weight: bold;
+    border-bottom: 1px solid #dfae3157;
+}
+
+.nav-categorias ul,
+.nav-categorias1 ul {
+    height: 0;
+    overflow: hidden;
+}
+
+/*LIVRO, audio e tese*/
+
+.LIVRO.abrir,
+.audio.abrir,
+.tese.abrir {
+    height: auto;
+}
+
+.nav-categorias ul li {
+    padding: 10px;
+}
+
+.nav-categorias ul li:hover {
+    cursor: pointer;
+    background-color: #99999962;
+}
+
+
+.nav-categorias1 ul li {
+    padding: 10px;
+}
+
+.nav-categorias1 ul li:hover {
+    cursor: pointer;
+    background-color: #99999962;
+}
+
+
+.prateleiras-categorizada {
+    display: flex;
+    gap: 20px;
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+    padding: 20px;
+    background: url(../img/estante.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: color;
+    background-color: rgba(0, 0, 0, 0.363);
+}
+
+.prateleira-livros {
+    width: 100%;
+}
+
+.livros-da-prateleira {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.livros-da-prateleira .livro img {
+    width: 130px;
+    transition: .1s;
+}
+
+
+.livros-da-prateleira .livro img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.livroDoMeio {
+    transform: scale(1.1);
+}
+
+.prateleira-Livros h2 {
+    margin-bottom: 40px;
+}
+
+/*opçoes de leitura*/
+
+.container {
+    text-align: center;
+    padding: 35px;
+    margin: 60px 30px 50px;
+
+}
+
+.container h2 {
+    padding-bottom: 10px;
+}
+
+.prateleira {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.livros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+    margin-bottom: 10px;
+
+}
+
+.livros .livro {
+    color: #ffb700;
+}
+
+.livros img {
+    cursor: pointer;
+    width: 180px;
+    transition: .1s;
+}
+
+
+.livros img:hover {
+    transform: scale(1.1);
+
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    line-height: 25px;
+}
+
+.title::after {
+    content: '';
+    background-color: #f7b40d;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+.btnVerMais {
+    margin-top: 15px;
+    margin-left: 5px;
+    padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    background-color: sienna;
+    cursor: pointer;
+    text-align: center;
+    transition: .5s;
+
+}
+
+
+.btnVerMais:hover {
+    background-color: #b86b48;
+
+}
+
+
+.btnVerMais a {
+    color: white;
+}
+
+
+/*fim do estilo das prateleiras*/
+
+/*fim do estilo do main*/
+
+/*livro da semana*/
+
+.livrodasemana {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 0;
+    padding: 30px
+}
+
+.livrodasemana div {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.livrodasemana div img {
+    width: 100%;
+    cursor: pointer;
+}
+
+/*fim livro da semana*/
+
+/*estilo do dashboard*/
+.visitas {
+    padding: 20px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.visitas div {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.visitas p {
+    font-weight: bold;
+}
+
+.visitas span {
+    display: block;
+    font-size: 100px;
+}
+
+/*estilo do dashboard*/
+
+/*estilo do rodape*/
+footer {
+    background-color: black;
+    width: 100%;
+    padding: 5px 20px;
+    color: white;
+    text-align: center;
+
+}
+
+footer .copyright {
+    width: 100%;
+    margin-top: 5px;
+    padding-top: 10px;
+    border-top: 2px solid white;
+    color: white;
+}
+
+footer ul {
+    margin-top: 10px;
+}
+
+footer ul li {
+    font-weight: 700;
+    padding: 3px;
+}
+
+footer a {
+    display: block;
+    color: #727272;
+    transition: .2s;
+}
+
+footer a:hover {
+    color: #4b4b4b;
+}
+
+footer p {
+    color: #f7b40d;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+hr {
+    color: white;
+    height: 10px;
+    width: 100%;
+}
+
+footer .content {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px;
+    align-items: center;
+}
+
+.logo-biblioteca,
+.desenvolvido-por,
+.links {
+    margin-bottom: 30px;
+}
+
+footer img {
+    width: 150px;
+}
+
+/*fim do estilo do rodape*/
+
+
+/*estilo do ouvir musica*/
+
+.ouvirmusica {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #fcdd8e;
+    border: 2px solid #f7b50d69;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.ouvirmusica.tocar{
+    display: none;
+}
+
+.pausarmusica{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #fcdd8e;
+    border: 2px solid #f7b50d69;
+    border-radius: 50%;
+    cursor: pointer;
+    animation: pisca .5s ease-in-out infinite;
+    display: none;
+}
+
+.pausarmusica.tocar{
+    display: block;
+}
+
+.pausarmusica img{
+    animation: giro 1s infinite;
+}
+
+.ouvirmusica:hover {
+    background-color: #dfad31;
+
+}
+
+
+
+@keyframes giro {
+    0% {
+        transform: rotate(0deg);
+    }
+
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+@keyframes pisca {
+    from{
+        background-color: #dfad31;
+    }
+
+    to{
+        background-color: #805d05;
+
+    }
+    
+}
+
+/*fim do estilo de ouvir nusica*/
+
+
+
+/*estilo responsivo para mobile*/
+
+
+@media screen and (max-width:1205px) {
+
+    /*estilo do cabecalho*/
+
+    .background-barriga-do-instic {
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    /*fim do estilo do cabecalho*/
+
+    /*estilo do destaque*/
+    .destaques img {
+        border-radius: 10px;
+        padding: 0;
+    }
+
+    /*fim estilo do destaque*/
+
+    /*estil da prateleira*/
+
+    .livros img {
+        width: 130px;
+    }
+
+
+    .container {
+        margin-bottom: 20px;
+
+    }
+
+    /*fim do estilo da prateleira*/
+
+    /*estilo da primeira prateleira*/
+
+    .livros-da-prateleira .livro img {
+        width: 100px;
+    }
+
+    .prateleiras-categorizada {
+        width: 100%;
+    }
+
+
+    /**/
+
+}
+
+@media screen and (max-width:590px) {
+
+    /*estilo do cabecalho*/
+
+    .background-barriga-do-instic {
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    /*fim do estilo do cabecalho*/
+
+    /*estilo do destaque*/
+    .destaques img {
+        border-radius: 10px;
+        padding: 0;
+    }
+
+    /*fim estilo do destaque*/
+
+    /*estil da prateleira*/
+
+
+    .icon-categorias img {
+        display: block;
+    }
+
+
+    .livros img {
+        width: 110px;
+    }
+
+    .nav-categorias {
+        display: none;
+    }
+
+    .nav-categorias1 {
+        display: block;
+        background-color: #f0f8ffd3;
+        position: fixed;
+        top: 73px;
+        left: 0;
+        height: 100vh;
+        transition: 1s;
+        width: 0;
+        overflow: hidden;
+        z-index: 2;
+    }
+
+    .overflow {
+        position: fixed;
+        width: 100%;
+        top: 70px;
+        left: 0;
+        height: 100vh;
+        background-color: #00000079;
+        z-index: 888;
+        display: none;
+        z-index: 1;
+    }
+
+    .overflow.abrir {
+        display: block;
+    }
+
+    .nav-categorias1.abrir {
+        width: 50%;
+    }
+
+
+
+    /*fim do estilo da prateleira*/
+
+
+
+}
+
+
+@media screen and (max-width:450px) {
+
+    /*estilo do cabecalho*/
+
+    .background-barriga-do-instic {
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    /*fim do estilo do cabecalho*/
+
+    /*estilo do destaque*/
+
+    /*fim estilo do destaque*/
+
+    /*estil da prateleira*/
+
+    .livros img {
+        width: 80px;
+    }
+
+    /*fim do estilo da prateleira*/
+
+}
+
+
+@media screen and (max-width:365px) {
+
+    /*estilo do cabecalho*/
+
+    .background-barriga-do-instic {
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*fim do estilo do cabecalho*/
+
+
+
+    /*estilo do destaque*/
+
+    /*fim estilo do destaque*/
+
+}
+
+
+
+/*fim da responsividade*/

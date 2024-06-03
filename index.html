@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Instic - A maneira mais facil de ler e ouvir um livro</title>
+
+    <!--estilo da pagina-->
+
+    <link rel="stylesheet" href="./Assets/css/styleMain.css">
+    <link rel="stylesheet" href="./Assets/css/informaçao.css">
+    <link rel="stylesheet" href="./Assets/css/loading.css">
+    <link rel="shortcut icon" href="./Assets/icons/Logo_Gold.png" type="image/png">
+
+    <!--fim do estilo da pagina-->
+
+</head>
+
+<body>
+    <!--Loading antes de abrir a pagina-->
+
+    <div class="loading">
+        <img src="./Assets/img/Logo_Gold.png" alt="">
+    </div>
+    <!------------------------------->
+    <!--cabeçalho-->
+
+    <header>
+
+        <div class="cabecalho-fixo">
+            <h1>InLib.</h1>
+        </div>
+        <div class="background-barriga-do-instic"></div>
+
+    </header>
+
+    <!--fim do cabeçalho-->
+
+    <div class="carregado">
+
+        <img class="logo" src="./Assets/img/Logo_Gold.png" alt="">
+        <!--zona principal-->
+
+        <main>
+            <section class="destaques">
+                <div class="livro">
+                    <img onclick="informacao()" src="./Assets/img/Capas De Livros/2.jpg" alt="capa de um livro">
+
+                </div>
+                <div class="livro">
+                    <img onclick="informacao()" src="./Assets/img/Capas De Livros/3.jpg" alt="capa de um livro">
+
+                </div>
+                <div class="livro">
+                    <img onclick="informacao()" src="./Assets/img/Capas De Livros/6.jpg" alt="capa de um livro">
+
+                </div>
+                <div class="livro">
+                    <img onclick="informacao()" src="./Assets/img/Capas De Livros/5.jpg" alt="capa de um livro">
+
+                </div>
+
+            </section>
+
+            <!--fim dos destaques-->
+            <div class="icon-categorias">
+                <img onclick="categoria()" src="./Assets/icons/category-regular-24.png" alt="categoria">
+            </div>
+            <!--primeira prateleira-->
+
+            <section class="prateleiras">
+
+                <div class="container-categorias">
+
+                    <div class="nav-categorias1">
+                        <nav>
+                            <p id="livro">Livros <span id="fecharLivro"></span></p>
+                            <ul onclick="fecharCategoria()" class="LIVRO">
+                                <li>Historia</li>
+                                <li>Ciências</li>
+                                <li>Ficção</li>
+                                <li>Programação</li>
+                            </ul>
+                            <p id="audio">Audio Livros <span id="fecharAudio"></span></p>
+                            <ul onclick="fecharCategoria()" class="audio">
+                                <li>Historia</li>
+                                <li>Ciências</li>
+                                <li>Ficção</li>
+                                <li>Programação</li>
+                            </ul>
+                            <p id="tese">Teses <span id="fecharTese"></span></p>
+                            <ul class="tese" onclick="fecharCategoria()">
+                                <li>Monogafias</li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="nav-categorias">
+                        <nav>
+                            <p id="livro1">Livros <span id="fecharLivro"></span></p>
+                            <ul class="LIVRO">
+                                <li>Historia</li>
+                                <li>Ciências</li>
+                                <li>Ficção</li>
+                                <li>Programação</li>
+                            </ul>
+                            <p id="audio1">Audio Livros <span id="fecharAudio"></span></p>
+                            <ul class="audio">
+                                <li>Historia</li>
+                                <li>Ciências</li>
+                                <li>Ficção</li>
+                                <li>Programação</li>
+                            </ul>
+                            <p id="tese1">Teses <span id="fecharTese"></span></p>
+                            <ul class="tese">
+                                <li>Monogafias</li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="prateleiras-categorizada">
+
+                        <div class="prateleira-Livros">
+
+                            <h2>Livros</h2>
+                            <div class="search">
+                                <img onclick="search()" src="./Assets/icons/search-alt-2-regular-24.png" alt="">
+                                <input type="search" placeholder="pesquisar um livro...">
+                            </div>
+                            <div class="livros-da-prateleira">
+
+                                <div class="livro">
+                                    <img onclick="informacao()" src="./Assets/img/Capas De Livros/2.jpg"
+                                        alt="Capa de um livro">
+                                </div>
+
+                                <div class="livro">
+                                    <img onclick="informacao()" src="./Assets/img/Capas De Livros/3.jpg"
+                                        alt="Capa de um livro">
+                                </div>
+                                <div class="livro">
+                                    <img onclick="informacao()" src="./Assets/img/Capas De Livros/4.jpg"
+                                        alt="Capa de um livro">
+                                </div>
+                            </div>
+
+                            <div class="livros-da-prateleira">
+                                <div class="livro">
+                                    <img onclick="informacao()" src="./Assets/img/Capas De Livros/5.jpg"
+                                        alt="Capa de um livro">
+                                </div>
+                                <div class="livro">
+                                    <img onclick="informacao()" src="./Assets/img/Capas De Livros/6.jpg"
+                                        alt="Capa de um livro">
+                                </div>
+                                <div class="livro">
+                                    <img onclick="informacao()" onclick="informacao()"
+                                        src="./Assets/img/Capas De Livros/7.jpg" alt="Capa de um livro">
+                                </div>
+                            </div>
+
+                            <div class="livros-da-prateleira">
+                                <div class="livro">
+                                    <img onclick="informacao()" src="./Assets/img/Capas De Livros/8.jpg"
+                                        alt="Capa de um livro">
+                                </div>
+                                <div class="livro">
+                                    <img onclick="informacao()" src="./Assets/img/Capas De Livros/9.jpg"
+                                        alt="Capa de um livro">
+                                </div>
+                                <div class="livro">
+                                    <img onclick="informacao()" src="./Assets/img/Capas De Livros/10.jpg"
+                                        alt="Capa de um livro">
+                                </div>
+                            </div>
+                            <button class="btnVerMais"><a href="./Assets/paginas/VerMais.html">Ver Mais -</a></button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="container">
+                    <h2 class="title">Sugestão de leitura</h2>
+
+
+                    <div class="prateleira">
+
+                        <div class="livros">
+                            <div class="livro">
+                                <img onclick="informacao()" src="./Assets/img/Capas De Livros/6.jpg"
+                                    alt="capa de um livro">
+
+                            </div>
+                            <div class="livro">
+                                <img onclick="informacao()" src="./Assets/img/Capas De Livros/7.jpg"
+                                    alt="capa de um livro">
+
+                            </div>
+                            <div class="livro">
+                                <img onclick="informacao()" src="./Assets/img/Capas De Livros/8.jpg"
+                                    alt="capa de um livro">
+
+                            </div>
+                        </div>
+
+                        <div class="livros">
+                            <div class="livro">
+                                <img onclick="informacao()" src="./Assets/img/Capas De Livros/9.jpg"
+                                    alt="capa de um livro">
+
+                            </div>
+                            <div class="livro">
+                                <img onclick="informacao()" src="./Assets/img/Capas De Livros/10.jpg"
+                                    alt="capa de um livro">
+
+                            </div>
+                            <div class="livro">
+                                <img onclick="informacao()" src="./Assets/img/Capas De Livros/11.jpg"
+                                    alt="capa de um livro">
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="btnVerMais"><a href="./Assets/paginas/VerMais.html">Ver Mais -</a></button>
+                </div>
+
+
+            </section>
+
+            <div class="livrodasemana">
+                <div>
+                    <h2 style="padding: 10px;" class="title">Livro da Semana</h2>
+                    <img onclick="informacao()" src="./Assets/img/Capas De Livros/15.jpg" alt="">
+                    <center>
+                        <button class="btnVerMais" style="color:
+                    white;">Ler Agora</button>
+                    </center>
+                </div>
+
+            </div>
+            <!--Dashboard visitas-->
+            <div class="visitas">
+                <div>
+                    <span id="dia">0</span>
+                    <p>Visita Alunos dia</p>
+                </div>
+                <div>
+                    <span id="local">0</span>
+                    <p>Visitas Diarias</p>
+                </div>
+                <div>
+                    <span id="mes">0</span>
+                    <p>Visita Por Mês</p>
+
+
+                </div>
+            </div>
+
+            <!--fim da Dashboard visitas-->
+
+
+
+        </main>
+
+        <!--fim da zona principal-->
+
+
+        <!--rodape-->
+
+        <footer>
+
+            <div class="content">
+                <div class="logo-biblioteca">
+                    <img src="./Assets/img/Logo_Gold.png" alt="">
+                </div>
+                <div class="desenvolvido-por">
+                    <h3>Desenvolvido Por:</h3>
+                    <p>Nucleo de Desenvolvimento do INSTIC</p>
+                </div>
+                <div class="links">
+                    <h3>Links importantes:</h3>
+                    <ul>
+                        <li><a href="">UniLuanda</a> </li>
+                        <li><a href="">INSTIC</a></li>
+                        <li><a href="">AE-INSTIC</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="copyright"> &copy; Copyright - 2024 <strong>Biblioteca Virtual.</strong></p>
+
+        </footer>
+
+        <!--fim do rodape-->
+
+
+    </div>
+
+
+    <!--ouvir musica-->
+    <audio id="musica" src="./Assets/musicas/1.mp3"></audio>
+
+    <div onclick="tocar()" class="ouvirmusica">
+        <img src="./Assets//icons/music-solid-24.png" alt="">
+    </div>
+
+    <div onclick="parar()" class="pausarmusica">
+        <img src="./Assets//icons/music-solid-24.png" alt="">
+    </div>
+    <!-- fim de ouvir musica-->
+
+    <!--informacao do livro-->
+
+    <div class="informacao">
+
+        <div onclick="fecharInformacao()" class="icon-fechar">x </div>
+
+        <img src="./Assets/img/Capas De Livros/8.jpg" alt="capa">
+        <br><br>
+        <span>Titulo</span>
+        <span>[autor]</span>
+        <span>Sobre:</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, architecto cupiditate earum enim
+            veniam
+            tempora soluta ratione consectetur at facere delectus repudiandae harum eaque sunt, blanditiis, non
+            recusandae nobis. Dolore.</p>
+
+        <div class="more">
+            <p class="borda">Paginas:<span>500</span></p>
+            <p>Categoria:<span>Saude</span></p>
+        </div>
+
+        <button class="leragora">Ler Agora -</button>
+
+    </div>
+
+    <div onclick="fecharInformacao()" onclick="fecharCategoria()" class="overflow"></div>
+    <!--fim da informaçao do livro-->
+
+    <!--Java script da pagina-->
+
+    <script src="./Assets/script/script.js" defer></script>
+    <script src="./Assets/script/abrirInformacao.js" defer></script>
+
+    <!--fim do ja script principal-->
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+.loading {
+    position: fixed;
+    z-index: 99999999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/barrigaIsutic1.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-blend-mode: color;
+    background-color: #0000008a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading.entrar {
+    display: none;
+}
+
+.loading img {
+    position: relative;
+    width: 200px;
+    animation: imagemFlutuante 3s ease-in-out infinite alternate;
+    transition: .3s;
+}
+
+@keyframes imagemFlutuante {
+    0% {
+        top: -10px;
+    }
+
+    100% {
+        top: 20px;
+    }
+}
+
+
+.carregado {
+    margin-top: 100vh;
+    transition: 1.5s;
+}
+
+.carregado.entrar {
+    margin-top: 0;
+}
+
+
+.background-barriga-do-instic.entrar {
+    position: fixed;
+    width: 100%;
+    height: 400px;
+    top: 55px;
+    left: 0;
+    background: url(../img/barrigaIsutic1.jpg);
+    background-position: center center;
+    background-size: cover;
+    z-index: -1;
+    background-blend-mode: color;
+    background-color: rgba(0, 0, 0, 0.658);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
